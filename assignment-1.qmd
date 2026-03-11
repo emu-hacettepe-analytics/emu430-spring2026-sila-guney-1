@@ -50,7 +50,7 @@ head(polls_us_election_2016)
 ```
 
 ```{r}
-my_first <- "Sıla Nur Guney"
+my_first <- "Sila Nur Guney"
  my_birth_year <- "2002"
  cat("My first name is", my_first,"\n")
  cat("My birth year is", my_birth_year)
@@ -64,4 +64,33 @@ number_of_char<- nchar(my_first)
 k <- (nchar(my_first) + my_birth_year_sayi) %% 15 + 8
 print(k)
 
+```
+
+```{r}
+birth_years<- 1995:2005
+k_datas<- (nchar(my_first) + birth_years) %% 15 + 8
+
+print(k_datas)
+
+
+```
+
+```{r}
+if (k%% 2 == 0) {
+  head(polls_us_election_2016, k)
+} else {
+  tail(polls_us_election_2016, k)
+}
+#Bu döngünün oluşturulmasında Ai'dan yardım alınmıştır.
+
+```
+
+```{r}
+is.na(polls_us_election_2016)
+sum(is.na(polls_us_election_2016))
+#is.na fonksiyonu ai ile öğrenilmiştir.
+```
+
+```{r}
+print(sum(is.na(polls_us_election_2016)))
 ```
