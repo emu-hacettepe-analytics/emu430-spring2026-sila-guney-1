@@ -5,26 +5,26 @@ sidebar: false
 
 # Education
 
--   B.S., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing.
+-   B.S., Industrial Engineering, Hacettepe University, Turkey, 2021 - ongoing.
 
 # Work Experience
 
 ## Employements
 
-1.  Firm xxx, position xx, year xxx
-
-2.  Firm yyy, position yyy, year yyy
+1.  ROKETSAN, Project Management (Candidate), 2025 - ongoing
 
 ## Internships
 
-1.  Firm aaa, position xx, year xxx
-
-2.  Firm bbb, position yyy, year yyy
+1.  TUSAŞ, Project Management, 2025
 
 # Projects
+
+Graduation Project with ASELSAN
 
 # Competencies
 
 R, Quarto, Git, Python
 
 # Hobbies
+
+Pilates and Yoga
