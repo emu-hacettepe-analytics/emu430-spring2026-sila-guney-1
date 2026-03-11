@@ -28,3 +28,7 @@ R, Quarto, Git, Python
 # Hobbies
 
 Pilates and Yoga
+
+Download my CV from below:
+
+[download_my_CV](CV.pdf)
