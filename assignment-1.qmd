@@ -54,7 +54,7 @@ my_first <- "Sila Nur Guney"
  my_birth_year <- "2002"
  cat("My first name is", my_first,"\n")
  cat("My birth year is", my_birth_year)
-#cat komutu ai ile öğrenilmiştir.
+#The cat() function was learned with AI assistance.
 ```
 
 ```{r}
@@ -81,14 +81,13 @@ if (k%% 2 == 0) {
 } else {
   tail(polls_us_election_2016, k)
 }
-#Bu döngünün oluşturulmasında Ai'dan yardım alınmıştır.
-
+#AI assistance was used to create this loop.
 ```
 
 ```{r}
 is.na(polls_us_election_2016)
 sum(is.na(polls_us_election_2016))
-#is.na fonksiyonu ai ile öğrenilmiştir.
+#The is.na() function was learned with AI assistance.
 ```
 
 ```{r}
@@ -96,5 +95,39 @@ cat("The total number of NA values is", sum(is.na(polls_us_election_2016)))
 ```
 
 ```{r}
+na_column <- colSums(is.na(polls_us_election_2016))
+sorted_na <- sort(na_column, decreasing = TRUE)
+head(sorted_na, 8)
+#How to use sort() and sort from smallest to largest was learned using AI.
+```
 
+```{r}
+polls_new <- polls_us_election_2016
+for(i in 1:ncol(polls_new)) {
+  
+  if(is.numeric(polls_new[[i]])) {
+    polls_new[[i]] <- ifelse(is.na(polls_new[[i]]), 
+                                  my_birth_year_sayi + k, 
+                                  polls_new[[i]])
+    
+  } else if(is.character(polls_new[[i]]) | is.factor(polls_new[[i]])) {
+    polls_new[[i]] <- ifelse(is.na(polls_new[[i]]), paste0(my_first, "_", k), polls_new[[i]])
+  }
+}
+if (k %% 2 == 0) {
+  head(polls_new, k)
+} else {
+  tail(polls_new, k)
+}
+#The 'for' loop was implemented with the help of AI.
+```
+
+```{r}
+is.na(polls_new)
+sum(is.na(polls_new))
+cat("The total number of NA values is for remaining", sum(is.na(polls_new)))
+```
+
+```{r}
+anyNA(polls_new)
 ```
