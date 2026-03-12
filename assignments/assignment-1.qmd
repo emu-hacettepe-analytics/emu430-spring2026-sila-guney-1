@@ -10,7 +10,7 @@ title: "Assignment 1"
 
 My first assignment has two parts.
 
-## (a)
+## (a) **Summary**
 
 I choosed first video with Kerem Demirtaş.
 
@@ -40,7 +40,7 @@ Answer Key:
 
 2- Defining the problem correctly.
 
-## (b)
+## (b) Codes with R
 
 ```{r}
 library(dslabs)

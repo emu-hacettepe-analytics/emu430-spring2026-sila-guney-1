@@ -92,5 +92,9 @@ sum(is.na(polls_us_election_2016))
 ```
 
 ```{r}
-print(sum(is.na(polls_us_election_2016)))
+cat("The total number of NA values is", sum(is.na(polls_us_election_2016)))
+```
+
+```{r}
+
 ```
