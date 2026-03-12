@@ -65,3 +65,62 @@ k <- (nchar(my_first) + my_birth_year_sayi) %% 15 + 8
 print(k)
 
 ```
+
+```{r}
+if (k %% 2 == 0) {
+  head(polls_us_election_2016, k)
+} else {
+  tail(polls_us_election_2016, k)
+}
+
+#AI assistance was used create for this loop.
+
+```
+
+```{r}
+is.na(polls_us_election_2016)
+sum(is.na(polls_us_election_2016))
+#The is.na() function was learned with AI assistance.
+```
+
+```{r}
+cat("The total number of NA values is", sum(is.na(polls_us_election_2016)))
+```
+
+```{r}
+na_column <- colSums(is.na(polls_us_election_2016))
+sorted_na <- sort(na_column, decreasing = TRUE)
+head(sorted_na, 8)
+#How to use sort() and sort from smallest to largest was learned using AI.
+```
+
+```{r}
+polls_new <- polls_us_election_2016
+for(i in 1:ncol(polls_new)) {
+  
+  if(is.numeric(polls_new[[i]])) {
+    polls_new[[i]] <- ifelse(is.na(polls_new[[i]]), 
+                                  my_birth_year_sayi + k, 
+                                  polls_new[[i]])
+    
+  } else if(is.character(polls_new[[i]]) | is.factor(polls_new[[i]])) {
+    polls_new[[i]] <- ifelse(is.na(polls_new[[i]]), paste0(my_first, "_", k), polls_new[[i]])
+  }
+}
+if (k %% 2 == 0) {
+  head(polls_new, k)
+} else {
+  tail(polls_new, k)
+}
+#The 'for' loop was implemented with the help of AI.
+```
+
+```{r}
+is.na(polls_new)
+sum(is.na(polls_new))
+cat("The total number of NA values is for remaining", sum(is.na(polls_new)))
+```
+
+```{r}
+anyNA(polls_new)
+```
