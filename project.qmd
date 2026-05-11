@@ -5,8 +5,8 @@ sidebar: false
 
 I'm honored to be a member of the \[group name\] project team.
 
-Below, you'll find a brief summary of our project. To access a detailed project description, please go to [https://\[your-project-url\]](#0){.uri}.
+Below, you'll find a brief summary of our project. To access a detailed project description, please go to <https://emu-hacettepe-analytics.github.io/emu430-fall2024-team-bosphorusbytes-3/analysis.html>[\]](#0){.uri}.
 
 **Summary**
 
-\[provide a biref summary of your project\]
+Istanbul’s Airbnb market is spatially concentrated in a handful of tourist-heavy districts, commercially maturing through multi-listing operators, and now fully recovered from the COVID-19 shock. Central districts face the highest combined tourism pressure, with implications for housing availability and neighbourhood character.
